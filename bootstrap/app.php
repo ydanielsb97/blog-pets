@@ -7,6 +7,8 @@ use Slim\Views\TwigExtension;
 use Slim\Psr7\Factory\UriFactory;
 use Dotenv\Exception\InvalidPathException;
 
+
+
 require_once __DIR__ . '/../vendor/autoload.php';
 
 try {
@@ -46,4 +48,3 @@ $container->set('view', function ($container) use ($app) {
 });
 
 require_once __DIR__ . '/../routes/web.php';
-require_once __DIR__ . '/../routes/api.php';
